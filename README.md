@@ -1,6 +1,11 @@
 ## Django-ansible-demo (Work-in-progress)
 
-### Check out demo.mrmikenguyen.com/static/hello.html (Site WIP!)
+### Check out site below. Still WIP!
+
+```
+demo.mrmikenguyen.com/static/hello.html
+```
+
 
 **Steps that were done. Will cleanup and update later!**
 1. Spin up Ubuntu server in Linode.
