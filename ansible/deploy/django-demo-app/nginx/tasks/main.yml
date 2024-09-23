@@ -1,0 +1,26 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Deactivate the default nginx from sites-available
+  file:
+    path: /etc/nginx/sites-available/default
+    state: absent
+
+- name: Copy demo.mrmikenguyen.com
+  template:
+    src: demo.mrmikenguyen.com
+    dest: /etc/nginx/sites-available/
+
+- name: Activate the demo.mrmikenguyen.com site
+  file:
+    src: /etc/nginx/sites-available/demo.mrmikenguyen.com
+    dest: /etc/nginx/sites-enabled/demo.mrmikenguyen.com
+    state: link
+
+- name: Restart nginx.service
+  systemd:
+    state: restarted
+    name: nginx
