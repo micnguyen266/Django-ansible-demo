@@ -4,8 +4,8 @@ Description=Django Demo
 [Service]
 Type=simple
 PIDFile={{projdir}}/gunicorn.pid
-User=john
-Group=john
+User=mike
+Group=mike
 EnvironmentFile={{etcdir}}/gunicorn.env
 WorkingDirectory={{projdir}}/
 ExecStart={{projdir}}/venv/bin/gunicorn --config {{etcdir}}/gunicorn.conf.py config.wsgi:application

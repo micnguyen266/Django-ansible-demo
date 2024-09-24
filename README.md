@@ -6,9 +6,10 @@
 demo.mrmikenguyen.com/static/hello.html
 ```
 
+TODO: Setup Terraform to be able to deploy infrastructure on Linode
 
 **Steps that were done. Will cleanup and update later!**
-1. Spin up Ubuntu server in Linode.
+1. Manually spin up Ubuntu server in Linode. (Plan on using Terraform to deploy infra)
 2. SSH to server.
 3. Create user under sudo group
    4. useradd -m -s /bin/bash -G sudo mike
