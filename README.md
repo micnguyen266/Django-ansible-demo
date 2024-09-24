@@ -6,7 +6,7 @@
 demo.mrmikenguyen.com/static/hello.html
 ```
 
-TODO: Need to finishing setting up Django. Need to setup Terraform to be able to deploy infrastructure on Linode
+TODO: Need to finish setting up Django. Need to setup Terraform to be able to deploy infrastructure on Linode
 
 **Steps that were done. Will cleanup and update later!**
 1. Manually spin up Ubuntu server in Linode. (Plan on using Terraform to deploy infra)
