@@ -1,10 +1,16 @@
 - hosts: mike
   gather_facts: no
   become: True
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+    gunicorn_port: 8000
+    db_user: "user1"
+    db_name: "database1"
+    db_pass: ""
   roles:
     - role: 'deploy/django-demo-app/nginx'
-      vars:
-        gunicorn_port: 9001
+    - role: 'deploy/django-demo-app/db'
+
 
 #- hosts: jo
 #  gather_facts: no

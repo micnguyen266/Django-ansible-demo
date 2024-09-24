@@ -1,7 +1,7 @@
 ---
-- name: Add Postgres repo for Ubuntu 18.04
+- name: Add Postgres repo for Ubuntu 24.04
   apt_repository:  # add-apt-repository <repo>
-    repo: deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
+    repo: deb https://apt-archive.postgresql.org/pub/repos/apt bionic-pgdg main
     state: present
     update_cache: no
 
@@ -13,7 +13,7 @@
 - name: Install Postgresql 12 Server
   apt: # apt-get update && apt-get install ...
     name:
-      - postgresql-12
+      - postgresql-16
       - postgresql
       - postgresql-contrib
       - libpq-dev
