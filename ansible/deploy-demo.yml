@@ -7,9 +7,14 @@
     db_user: "user1"
     db_name: "database1"
     db_pass: ""
+    projdir: "/home/mike/django-lessons-js"
   roles:
     - role: 'deploy/django-demo-app/nginx'
+      tags: ['nginx']
     - role: 'deploy/django-demo-app/db'
+      tags: ['db']
+    - role: 'deploy/django-demo-app/app'
+      tags: ['app']
 
 
 #- hosts: jo

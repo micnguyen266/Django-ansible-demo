@@ -3,7 +3,7 @@ from .base import *
 DEBUG = False
 INTERNAL_IPS = [ '127.0.0.1', ]
 
-ALLOWED_HOSTS = ['localhost', 'demo.dglte.net', ]
+ALLOWED_HOSTS = ['localhost', 'demo.mrmikenguyen.com', ]
 
 SITE_ID = 1
 SECRET_KEY = os.environ['SECRET_KEY']
