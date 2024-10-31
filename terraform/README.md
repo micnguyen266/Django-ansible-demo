@@ -23,7 +23,7 @@ create terraform.tfvars locally and set your linode_token variable
 Run Terragrunt init/plan/apply
 
 ```bash
-terraform init
+terraform init (should run only once)
 terraform plan
 terraform apply
 ```

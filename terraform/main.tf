@@ -12,9 +12,9 @@ provider "linode" {
   token = var.linode_token
 }
 
-resource "linode_instance" "terraform-web" {
+resource "linode_instance" "main" {
         image = "linode/ubuntu24.04"
-        label = "Terraform-Web-Example"
+        label = "tf-linode-demo"
         group = "Terraform"
         region = "us-east"
         type = "g6-nanode-1"
