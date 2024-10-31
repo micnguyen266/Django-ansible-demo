@@ -10,7 +10,7 @@ Demo of Linode Terraform Provider.
 
 ### Files
 
-`linode-terraform-web.tf` in the root contains the common config needed to run the demo. 
+`main.tf` in the root contains the common config needed to run the demo. 
 
 ### Usage
 
@@ -20,7 +20,7 @@ To use:
 create terraform.tfvars locally and set your linode_token variable
 ```
 
-Run Terragrunt init/plan/apply
+Run Terraform init/plan/apply
 
 ```bash
 terraform init (should run only once)
@@ -28,7 +28,7 @@ terraform plan
 terraform apply
 ```
 
-When finished. remove any resources that have been created with `terraform destroy`.
+When finished remove any resources that have been created with `terraform destroy`.
 
 ```bash
 terraform destroy
